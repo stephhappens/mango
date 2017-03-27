@@ -1,0 +1,24 @@
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+
+  &--vertical {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1rem;
+
+  &__item {
+    flex-basis: calc(100% / 3 - 2rem);
+    flex-grow: 1;
+    margin: 0.5rem 1rem;
+  }
+}

@@ -1,0 +1,29 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 1rem;
+  background: $c-secondary;
+  color: $c-primary;
+
+  &__logo {
+  font-size: 1.5rem;
+  background: $c-primary;
+  color: $c-secondary;
+  }
+
+  &__right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &-link {
+    margin-right: .5rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  }
+}

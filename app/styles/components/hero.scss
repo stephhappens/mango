@@ -1,0 +1,26 @@
+.hero {
+  // background: url("https://unsplash.com/search/black-and-white?photo=LWZ4vwZMVRs") no-repeat center;
+  background: $c-primary;
+  background-size: cover;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &__welcome {
+    background: $c-secondary;
+    opacity: .7;
+    padding: 4rem 4.5rem;
+    font-weight: lighter;
+
+  &-headline {
+    font-weight: 300;
+  }
+
+  &-subtitle {
+    font-weight: 800;
+  }
+
+  }
+}
