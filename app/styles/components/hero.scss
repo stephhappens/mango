@@ -1,12 +1,13 @@
 .hero {
-  // background: url("https://unsplash.com/search/black-and-white?photo=LWZ4vwZMVRs") no-repeat center;
-  background: $c-primary;
-  background-size: cover;
-  height: 30rem;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  background: url('/images/waterfall.jpg') no-repeat center;
+  height: 30rem;
+  background-size: cover;
+
+
 
   &__welcome {
     background: $c-secondary;
@@ -16,11 +17,12 @@
 
   &-headline {
     font-weight: 300;
+    z-index: 2;
   }
 
   &-subtitle {
     font-weight: 800;
+    z-index: 2;
   }
-
   }
 }

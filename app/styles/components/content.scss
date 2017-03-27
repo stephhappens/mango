@@ -1,0 +1,20 @@
+.content {
+display: flex;
+
+
+  &__view {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &-link{
+    font-weight: 200;
+    margin-right: .5rem;
+      &:hover {
+      text-decoration: underline;
+
+  }
+    }
+  }
+}
