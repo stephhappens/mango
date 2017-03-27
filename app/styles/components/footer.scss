@@ -1,0 +1,10 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+
+  &__flex {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+  }
+}
