@@ -7,22 +7,21 @@
   height: 30rem;
   background-size: cover;
 
-
-
   &__welcome {
     background: $c-secondary;
-    opacity: .7;
+    opacity: 0.7;
     padding: 4rem 4.5rem;
     font-weight: lighter;
+    letter-spacing: .5rem;
 
-  &-headline {
-    font-weight: 300;
-    z-index: 2;
-  }
+    &-headline {
+      font-weight: 300;
+      z-index: 2;
+    }
 
-  &-subtitle {
-    font-weight: 800;
-    z-index: 2;
-  }
+    &-subtitle {
+      font-weight: 800;
+      z-index: 2;
+    }
   }
 }

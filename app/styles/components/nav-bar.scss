@@ -7,10 +7,17 @@
   background: $c-secondary;
   color: $c-primary;
 
+  @media only screen and (max-width: 500px) {
+    .nav__right {
+      display: none;
+    }
+  }
+
   &__logo {
   font-size: 1.5rem;
-  background: $c-primary;
-  color: $c-secondary;
+  // background: $c-primary;
+  color: $c-primary;
+  letter-spacing: .4rem;
   }
 
   &__right {
@@ -20,6 +27,7 @@
 
   &-link {
     margin-right: .5rem;
+    justify-content: space-around;
 
     &:hover {
       text-decoration: underline;
