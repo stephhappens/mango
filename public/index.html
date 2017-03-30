@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>Mango</title>
   <link rel="stylesheet" href="/app.css">
+  <link rel="stylesheet" href="animate.min.css">
 </head>
+
 <body>
   <div class="app">
     <div class="nav container">
@@ -16,7 +19,7 @@
         <li class="nav__right-link">BLOG</li>
         <li class="nav__right-link">CONTACT</li>
         <li class="nav__right-link">SHOP</li>
-        <li class="nav__right-link"><i class="fa fa-shopping-bag" aria-hidden="true"></i></li>
+        <!-- <li class="nav__right-link"><i class="fa fa-shopping-bag" aria-hidden="true"></i></li> -->
       </ul>
     </div>
     <div class="hero">
@@ -29,46 +32,101 @@
     </div>
 
     <main class="content">
-        <div class="container">
-          <ul class="content__view">
-            <li class="content__view-link">ART</li>
-            <li class="content__view-link">DESIGN</li>
-            <li class="content__view-link">WEB</li>
-            <li class="content__view-link">WRITING</li>
-          </ul>
-          <div class="grid">
-            <div class="grid__item">
-              <img src="/images/hero.jpg" class="grid__item-vertical" alt="tower">
-            </div>
-            <div class="grid__item">
-              <img src="/images/hands.jpg" class="grid__item-horizontal" alt="tower">
-            </div>
-            <div class="grid__item">
-              <img src="/images/hero.jpg" class="grid__item-vertical" alt="tower">
-            </div>
-            <div class="grid__item">
-              <img src="/images/hands.jpg" class="grid__item-horizontal" alt="tower">
-            </div>
-            <div class="grid__item">
-              <img src="/images/hero.jpg" class="grid__item-vertical" alt="tower">
-            </div>
-            <div class="grid__item">
-              <img src="/images/hands.jpg" class="grid__item-horizontal" alt="tower">
+      <div class="container">
+        <ul class="content__view">
+          <li class="content__view-link">ART</li>
+          <li class="content__view-link">DESIGN</li>
+          <li class="content__view-link">WEB</li>
+          <li class="content__view-link">WRITING</li>
+        </ul>
+        <div class="grid">
+
+          <div class="grid__item">
+            <div class="card">
+              <div class="content__image aspect" data-groups='["art"]' data-title="Skyline">
+                <img src="/images/hero.jpg" class="grid__item-vertical content__image-pic" alt="tower">
+                <div class="content__image-text animate flipInX">
+                  <h3>I am some text!</h3>
+                  <h4>Can you see me?</h4>
+                </div>
+              </div>
             </div>
           </div>
+
+          <div class="grid__item">
+            <div class="card">
+              <div class="content__image" data-groups='["writing"]'>
+                <img src="/images/hands.jpg" class="grid__item-vertical content__image-pic" alt="tower">
+                <div class="content__image-text">
+                  <h3>I am some text!</h3>
+                  <h4>Can you see me?</h4>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <div class="grid__item">
+            <div class="card">
+              <div class="content__image" data-groups='["art"]'>
+                <img src="/images/hero.jpg" class="grid__item-vertical content__image-pic" alt="tower">
+                <div class="content__image-text">
+                  <h3>I am some text!</h3>
+                  <h4>Can you see me?</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid__item">
+            <div class="card">
+              <div class="content__image" data-groups='["code"]'>
+                <img src="/images/hands.jpg" class="grid__item-vertical content__image-pic" alt="tower">
+                <div class="content__image-text">
+                  <h3>I am some text!</h3>
+                  <h4>Can you see me?</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid__item">
+            <div class="card">
+              <div class="content__image" data-groups='["writing"]'>
+                <img src="/images/hero.jpg" class="grid__item-vertical content__image-pic" alt="tower">
+                <div class="content__image-text">
+                  <h3>I am some text!</h3>
+                  <h4>Can you see me?</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid__item">
+            <div class="card">
+              <div class="content__image" data-groups='["art"]'>
+                <img src="/images/hands.jpg" class="grid__item-vertical content__image-pic" alt="tower">
+                <div class="content__image-text">
+                  <h3>I am some text!</h3>
+                  <h4>Can you see me?</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-    </main>
+      </div>
+  </div>
+  </main>
   <footer>
     <div class="footer container">
       <div class="footer__flex">
-          <h4 class="footer__copyright">COPYRIGHT 2017 BY STEPHHAPPENS</h4>
-          <div class="footer__flex-social">
-            <i class="fa fa-behance social-icon" aria-hidden="true"></i>
-            <i class="fa fa-github social-icon" aria-hidden="true"></i>
-            <i class="fa fa-envelope-open social-icon" aria-hidden="true"></i>
-            <i class="fa fa-linkedin social-icon" aria-hidden="true"></i>
-          </div>
+        <h4 class="footer__copyright">COPYRIGHT 2017 BY STEPHHAPPENS</h4>
+        <div class="footer__flex-social">
+          <i class="fa fa-behance social-icon" aria-hidden="true"></i>
+          <i class="fa fa-github social-icon" aria-hidden="true"></i>
+          <i class="fa fa-envelope-open social-icon" aria-hidden="true"></i>
+          <i class="fa fa-linkedin social-icon" aria-hidden="true"></i>
+        </div>
       </div>
     </div>
   </footer>
@@ -76,4 +134,5 @@
 
   <script src="/app.js" charset="utf-8"></script>
 </body>
+
 </html>

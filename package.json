@@ -15,8 +15,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "animate.css": "^3.5.2",
     "font-awesome": "^4.6.3",
     "normalize-css": "^2.3.1",
+    "shufflejs": "^4.1.1",
     "whatwg-fetch": "^2.0.2",
     "yoga-sass": "^1.0.1"
   },
