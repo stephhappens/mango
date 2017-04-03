@@ -2,7 +2,7 @@ import 'whatwg-fetch';
 import Isotope from 'isotope-layout';
 import matchesSelector from 'desandro-matches-selector/matches-selector';
 
-// console.log('Hi! Thanks for looking at my work. I am currently seeking freelance and full-time employment. Look forward to talking!');
+console.log('Hi! Thanks for looking at my work. I am currently seeking freelance and full-time employment. Give me a call at (615) 881-2748 or email me at stephanie.n.winn@gmail.com. Look forward to talking!');
 
 // const elem = document.querySelector('.grid');
 const iso = new Isotope('.grid', {
