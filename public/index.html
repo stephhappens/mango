@@ -6,6 +6,7 @@
   <title>Mango</title>
   <link rel="stylesheet" href="/app.css">
   <link rel="stylesheet" href="animate.min.css">
+
 </head>
 
 <body>
@@ -33,17 +34,18 @@
 
     <main class="content">
       <div class="container">
-        <ul class="content__views">
-          <a href="" class="content__view-link-a"><a href=""><li class="content__view-link">ART</li></a>
-            <a href="" class="content__view-link-a"><li class="content__view-link">DESIGN</li></a>
-            <a href="" class="content__view-link-a"><li class="content__view-link">WEB</li></a>
-            <a href="" class="content__view-link-a"><li class="content__view-link">WRITING</li></a></a>
-        </ul>
+        <div class="content__views filters-button-group">
+            <button class="content__view-link" data-filter="*"><p class="content__view-text">ALL</p></button>
+            <button class="content__view-link" data-filter="art"><p class="content__view-text">ART</p></button>
+            <button class="content__view-link" data-filter="design"><p class="content__view-text">DESIGN</p></button>
+            <button class="content__view-link" data-filter="web"><p class="content__view-text">WEB</p></button>
+            <button class="content__view-link" data-filter="writing"><p class="content__view-text">WRITING</p></button>
+        </div>
         <div class="grid" id="grid">
 
-          <div class="grid__item">
+          <div class="grid__item" data-category="art">
             <div class="card">
-              <div class="content__image aspect">
+              <div class="content__image">
                 <img src="/images/hero.jpg" class="content__image-pic" alt="tower">
                 <div class="content__image-text animate flipInX">
                   <h3>I am some text!</h3>
@@ -53,7 +55,7 @@
             </div>
           </div>
 
-          <div class="grid__item">
+          <div class="grid__item" data-category="web">
             <div class="card">
               <div class="content__image">
                 <img src="/images/hands.jpg" class="grid__item-vertical content__image-pic" alt="tower">
@@ -65,7 +67,7 @@
             </div>
           </div>
 
-          <div class="grid__item">
+          <div class="grid__item" data-category="art">
             <div class="card">
               <div class="content__image">
                 <img src="/images/hero.jpg" class="content__image-pic" alt="tower">
@@ -77,7 +79,7 @@
             </div>
           </div>
 
-          <div class="grid__item">
+          <div class="grid__item" data-category="writing">
             <div class="card">
               <div class="content__image">
                 <img src="/images/hands.jpg" class="content__image-pic" alt="tower">
@@ -89,7 +91,7 @@
             </div>
           </div>
 
-          <div class="grid__item">
+          <div class="grid__item" data-category="web">
             <div class="card">
               <div class="content__image">
                 <img src="/images/hero.jpg" class="content__image-pic" alt="tower">
@@ -101,7 +103,7 @@
             </div>
           </div>
 
-          <div class="grid__item">
+          <div class="grid__item" data-category="design">
             <div class="card">
               <div class="content__image">
                 <img src="/images/hands.jpg" class="content__image-pic" alt="tower">

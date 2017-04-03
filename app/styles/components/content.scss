@@ -1,7 +1,8 @@
 .content {
   display: flex;
+  flex-direction: row;
 
-  &__view, a {
+  &__view {
     font-size: 0.9rem;
     max-width: 50%;
     margin: 0 auto;
@@ -10,7 +11,14 @@
     justify-content: space-around;
     align-items: center;
 
-    &-link {
+    &-text {
+      text-decoration: none;
+    }
+
+    &-link, a {
+      display: flex;
+      flex-direction: row;
+      margin: 0;
       font-weight: 200;
       text-decoration: none;
       color: $c-primary;
