@@ -1,7 +1,7 @@
 .content {
   display: flex;
 
-  &__view {
+  &__view, a {
     font-size: 0.9rem;
     max-width: 50%;
     margin: 0 auto;
@@ -12,6 +12,8 @@
 
     &-link {
       font-weight: 200;
+      text-decoration: none;
+      color: $c-primary;
 
       &:hover {
         text-decoration: underline;
