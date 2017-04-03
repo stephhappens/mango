@@ -15,13 +15,15 @@
       text-decoration: none;
     }
 
-    &-link, a {
+    &-link, a, button {
       display: flex;
       flex-direction: row;
       margin: 0;
       font-weight: 200;
       text-decoration: none;
       color: $c-primary;
+      background: none;
+      border: none;
 
       &:hover {
         text-decoration: underline;
