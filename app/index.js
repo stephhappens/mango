@@ -1,28 +1,34 @@
 import 'whatwg-fetch';
 import Isotope from 'isotope-layout';
 import matchesSelector from 'desandro-matches-selector/matches-selector';
+// import masonry from 'layout-modes/masonry';
 
 console.log('Hi! Thanks for looking at my work. I am currently seeking freelance and full-time employment. Give me a call at (615) 881-2748 or email me at stephanie.n.winn@gmail.com. Look forward to talking!');
 
 // const elem = document.querySelector('.grid');
 const iso = new Isotope('.grid', {
   itemSelector: '.grid__item',
-  layoutMode: 'fitRows'
+  masonry: {
+    columnWidth: 200
+  }
 });
+
+iso.arrange({
+  filter: '.art',
+  // sortBy:
+});
+iso.arrange();
 
 const filterFns = {
   art(itemType) {
-    const art =
-  itemType.querySelector('.art').textContent;
+    const art = itemType.querySelector('.art').textContent;
 
     return art.match(art);
   }
 };
 
-const filterType =
-document.querySelector('.filters-button-group');
-filterType.addEventListener('click',
-(event) => {
+const filterType = document.querySelector('.filters-button-group');
+filterType.addEventListener('click', (event) => {
   if (!matchesSelector(event.target, 'button')) {
     return;
   }
